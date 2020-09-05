@@ -14,21 +14,6 @@
 # limitations under the License.
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := a50s
-
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk) 
-
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
-
-# Inherit from device.mk
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a50s
-PRODUCT_NAME := aosp_a50s
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := Galaxy a50s
-PRODUCT_MANUFACTURER := Samsung
+# Linker
+PRODUCT_COPY_FILES += \
+    $(PLATFORM_PATH)/config/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
