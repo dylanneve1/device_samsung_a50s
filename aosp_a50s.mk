@@ -20,12 +20,12 @@ PRODUCT_RELEASE_NAME := a50s
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk) 
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a50s
-PRODUCT_NAME := omni_a50s
+PRODUCT_NAME := aosp_a50s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := Galaxy a50s
 PRODUCT_MANUFACTURER := Samsung

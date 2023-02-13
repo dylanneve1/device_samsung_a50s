@@ -1,1 +1,1 @@
-add_lunch_combo omni_a50s-eng
+add_lunch_combo aosp_a50s-eng

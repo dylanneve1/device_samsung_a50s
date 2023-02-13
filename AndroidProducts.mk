@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_a50s.mk
+    $(LOCAL_DIR)/aosp_a50s.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_a50s-eng
+    aosp_a50s-eng
 
